@@ -18,7 +18,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header section">
@@ -38,41 +39,48 @@
           <use href="./img/icon/icon-sprite.svg#icon-bracket"></use>
         </svg>
       </button>
+      <div href="#" class="burger js-menu">
+        <span class="burger__icon"></span>
+      </div>
+      <!-- <span class="header__mobile-menu"></span> -->
     </header>
     <main>
       <section class="hero">
         <div class="hero__container section">
-        <div class="hero__passion">
-          <div>
-            <p class="hero__text">ice cream made with</p>
-            <h1 class="hero__title">passion</h1>
-            <div class="hero__buttons">
-              <button class="hero__btn-product" type="button">Products</button>
-              <button class="hero__btn-made" type="button">
-                How it's made?
-              </button>
+          <div class="hero__passion">
+            <div>
+              <p class="hero__text">ice cream made with</p>
+              <h1 class="hero__title">passion</h1>
+              <div class="hero__buttons">
+                <button class="hero__btn-product" type="button">
+                  Products
+                </button>
+                <button class="hero__btn-made" type="button">
+                  How it's made?
+                </button>
+              </div>
             </div>
+            <ul class="hero__list list">
+              <li class="hero__link">
+                <span class="hero__number">16</span>cafes
+              </li>
+              <li class="hero__link">
+                <span class="hero__number">23</span>food trucks
+              </li>
+            </ul>
           </div>
-          <ul class="hero__list list">
-            <li class="hero__link">
-              <span class="hero__number">16</span>cafes
-            </li>
-            <li class="hero__link">
-              <span class="hero__number">23</span>food trucks
-            </li>
-          </ul>
+          <p class="hero__slide">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a class="hero__description" href="#"
+            ><svg class="hero__arrow" width="30" height="30">
+              <use href="./img/icon/icon-sprite.svg#icon-arrow"></use>
+            </svg>
+          </a>
         </div>
-        <p class="hero__slide">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
-        <a class="hero__description" href="#"
-          ><svg class="hero__arrow" width="30" height="30">
-            <use href="./img/icon/icon-sprite.svg#icon-arrow"></use>
-          </svg>
-        </a>
       </section>
-    </div>
     </main>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
